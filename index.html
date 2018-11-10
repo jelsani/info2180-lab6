@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Online Computing Dictionary (AJAX Lab)</title>
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script src="AJAX.js" type="text/javascript"></script>
+	</head>
+	<body>
+        <div id="header">Online Computing Dictionary</div><br>
+        <div class="container">
+            <div id="searchSect">
+                <p>Look up the definition of a word e.g PHP, AJAX, HTML, etc.</p>
+                <form onsubmit="javascript:loadDefinitions(false);return false;" >
+                    <input type="text" id="queryTxtBox" autofocus >
+                    <input type="button" id="btnSearch" value="Search" onclick="loadDefinitions(false)" >
+                    <input type="button" id="btnAllSearch" value="Get All Definitions" onclick="loadDefinitions(true)" >
+                </form><br>
+            </div>
+            <div id="result"></div>
+        </div>
+    </body>
+</html>

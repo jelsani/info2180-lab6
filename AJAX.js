@@ -13,6 +13,10 @@ function loadDefinitions(allSearch)
     xhttp.open("GET", "request.php", true);
     xhttp.send();
 }
+$('#btnSearch').keyup(fucntion(){
+    alert("Definition is: " + result)
+});
+
 
 function parseXMLData(xml, allSearch, query) 
 {
